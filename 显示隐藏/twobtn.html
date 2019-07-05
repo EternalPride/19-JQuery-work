@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: cornsilk;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				border: 1px solid black;
+				margin-top: 10px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="" id="show1" value="显示" />
+		<input type="button" name="" id="hide1" value="隐藏" />
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#show1").click(function(){
+				$("div").show(500)
+			})
+			$("#hide1").click(function(){
+				$("div").hide(500)
+			})
+			$("div").click(function(){
+			$(this).css("background-color","cornflowerblue")
+			})
+		})
+	</script>
+</html>

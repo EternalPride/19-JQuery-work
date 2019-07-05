@@ -1,0 +1,11 @@
+$(function(){
+	$('div').mousedown(function(){
+		$(document).mousemove(function(e){
+			$('div').offset({'left':e.pageX
+			                 ,'top':e.pageY})
+		})
+		$(document).mouseup(function(){
+			$(document).off('mousemove');
+		})
+	})
+})

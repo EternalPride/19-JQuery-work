@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#inset{
+				width: 300px;
+				height: 200px;
+				border: 1px solid black;
+				/*display: block;*/
+				display: none;
+				position:absolute;
+				background-color: cornsilk;
+				margin-left: 600px;
+				margin-top: 200px;
+			}
+			#btn2{
+				width: 50px;
+				height: 30px;
+				margin-left: 130px;
+			}
+			#btn1{
+				width: 70px;
+				height: 30px;
+			}
+			#inset p{
+				width: 295px;
+				height: 50px;
+				line-height: 50px;
+				margin-top: -0px;
+				padding-left: 5px;
+				font-weight: 700;
+				background-color: gainsboro;
+			}
+			#inset p span{
+				float: right;
+				padding-right: 10px;
+			}
+			#tr1{
+				text-align: center;
+				font-size: 20px;
+				font-weight: 700;
+				background-color:cornflowerblue;
+				color: white;
+			}
+			tr{
+				text-align: center;
+				background-color: gainsboro;
+			}
+			#warp2{
+				width: 500px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<script type="text/javascript" src="js/new_file2.js" ></script>
+	<body>
+		<div>
+			<!--<div id="inset">
+				<p>添加数据<span>X</span></p>
+				课程名称：<textarea id="tex1" placeholder="请输入课程名称"></textarea>
+				<br/>
+				所属学院：<textarea id="edti" placeholder="信息工程系"></textarea>
+				<br/>
+				<input type="button" id="btn2" value="添加" />
+			</div>-->
+			
+			<div id="inset">
+			<p>添加数据</p>
+			<label>课程名称：</label><input type="text" name="" id="classname" value="" /><br/>
+			<label>所属学院：</label><input type="text" name="" id="school" value="" /><br/>
+			<input type="button" name="" id="btn2" value="添加" />
+		</div>
+			
+			
+			<div id="warp2">
+			<input type="button" id="btn1" value="添加数据" /><br/><br/>
+			<table id="table1" style="width: 500px;" border="1" cellpadding="0" cellspacing="0">
+				<tr id="tr1">
+					<td>课程名称</td>
+					<td>所属学院</td>
+					<td>已学会</td>
+				</tr>
+				<tr>
+					<td>CSS</td>
+					<td>信息工程系</td>
+					<td class="td1">删除</td>
+				</tr>
+				<tr>
+					<td>js</td>
+					<td>信息工程系</td>
+					<td class="td1">删除</td>
+				</tr>
+				<tr>
+					<td>jQ</td>
+					<td>信息工程系</td>
+					<td class="td1">删除</td>
+				</tr>
+				<tr>
+					<td>ASP</td>
+					<td>信息工程系</td>
+					<td class="td1">删除</td>
+				</tr>
+				<tr>
+					<td>php</td>
+					<td>信息工程系</td>
+					<td class="td1">删除</td>
+				</tr>
+</table>
+</div>
+	    </div>
+	</body>
+</html>

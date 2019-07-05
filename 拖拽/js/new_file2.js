@@ -1,0 +1,28 @@
+$(function(){
+	$('#zyddiv4').mousedown(function(){
+		$(document).mousemove(function(e){
+			$('#zyddiv4').offset({'left':e.pageX})
+			//设置拖动左右的区域
+			if($('#zyddiv4').position().left<=0)
+		{
+			$('#zyddiv4').css('left','0px')
+		}
+			if($('#zyddiv4').position().left>=640)
+		{
+			$('#zyddiv4').css('left','640px')
+			$('#zyddiv5').css('width','650px')
+		}
+		$('#zyddiv3').text($('#zyddiv4').position().left+'px')//拖动滚动条显示拖动距离
+		//滚动条滚动过的区域变颜色
+		var zyd=$('#zyddiv4').position().left;
+		$('#zyddiv5').css({
+			 'width':zyd+10+'px'
+			,'height':'10px'
+			,'position':'absolute'
+		})
+		})
+		$(document).mouseup(function(){
+			$(document).off('mousemove')
+		})
+	})
+})

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: cornsilk;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				border: 1px solid black;
+				margin-top: 10px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="" id="show1" value="显示" />
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $inp=$('input')
+			$inp.click(function(){
+				 $('div').show(500)	
+				if($inp.val()=='显示')
+				{
+					$inp.val('隐藏')
+					
+				}
+				
+				else
+				{
+					$inp.val('显示')
+					$('div').hide(500)
+				}
+			})
+			$('div').click(function(){
+				$(this).css("background-color","red")
+			})
+		})
+    </script>
+</html>

@@ -1,0 +1,24 @@
+$(function(){
+	var str=0
+	$('span:contains("热卖")').css('color','red')
+	$('li:nth-child(5)').css('color','red')
+	$('li:eq(10)').css('color','red')
+	$('[class=o]').css('color','red')
+	$('li:last-child()').show()
+	$('li:gt(5)').nextAll().hide()
+	$('#p2').click(function(){
+		str++;
+		if(str%2==0)
+		{
+			$('li:gt(5)').hide()
+			$('li:last-child()').show()
+			$('#p2').css('background-image','url(img/down.gif)')
+			$('#p2>span').text("显示其他品牌")
+		}
+		else{
+	    $('li:gt(5)').show()
+		$('#p2').css('background-image','url(img/up.gif)')
+		$('#p2>span').text("隐藏其他品牌")
+		}
+	})
+})

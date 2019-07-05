@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .slider {
+      height: 340px;
+      width: 790px;
+      margin: 100px auto;
+      position: relative;
+    }
+    
+    .slider li {
+      position: absolute;
+      display: none;
+    }
+
+    .slider li:first-child {
+      display: block;
+    }
+    
+    
+    .arrow {
+      display: none;
+    }
+    
+    .slider:hover .arrow {
+      display: block;
+    }
+    
+    .arrow-left,
+    .arrow-right {
+      font-family: "SimSun", "宋体";
+      width: 30px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    
+    .arrow-left:hover,
+    .arrow-right:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .arrow-left {
+      left: 0;
+    }
+    
+    .arrow-right {
+      right: 0;
+    }
+  
+  </style>
+</head>
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/new_file1.js"></script>
+<body>
+<div class="slider">
+  <ul>
+    <li><a href="#"><img src="img/1.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/2.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/3.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/4.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/5.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/6.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/7.jpg" alt=""></a></li>
+    <li><a href="#"><img src="img/8.jpg" alt=""></a></li>
+  </ul>
+  <!--箭头-->
+  <div class="arrow">
+    <span class="arrow-left">&lt;</span>
+    <span class="arrow-right">&gt;</span>
+  </div>
+</div>
+
+</body>
+</html>

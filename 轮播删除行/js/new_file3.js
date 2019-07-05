@@ -1,0 +1,17 @@
+$(function(){
+	$('.delete').eq(0).click(function(){
+		$('.delete').eq(0).prevAll().hide('slow');
+	})
+	$('.delete').eq(1).click(function(){
+		$('.delete').eq(1).prevAll().hide('slow');
+	})
+	$('.delete').eq(2).click(function(){
+		$('.delete').eq(2).prevAll().hide('slow');
+	})
+	$('.delete').eq(3).click(function(){
+		$('.delete').eq(3).prevAll().hide('slow');
+	})
+	$('.delete').eq(4).click(function(){
+		$('.delete').eq(4).prevAll().hide('slow');
+	})
+})
